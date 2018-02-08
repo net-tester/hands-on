@@ -15,7 +15,8 @@ FactoryGirl.define do
     name 'git_host'
     internal_network_host
     ip_address '10.10.10.1'
-    physical_port_number 2
+    physical_port_number 3
+    vlan_id 2025
     mac_address '00:00:5E:00:53:01'
   end
 
@@ -23,7 +24,8 @@ FactoryGirl.define do
     name 'test_host'
     internal_network_host
     ip_address '10.10.10.2'
-    physical_port_number 2
+    physical_port_number 3
+    vlan_id 2025
     mac_address '00:00:5E:00:53:02'
   end
 
@@ -32,6 +34,7 @@ FactoryGirl.define do
     internal_network_host
     ip_address '10.10.10.4'
     physical_port_number 2
+    vlan_id 2025
     mac_address '00:00:5E:00:53:03'
   end
 
@@ -56,6 +59,7 @@ FactoryGirl.define do
     dmz_network
     ip_address '10.10.0.10'
     physical_port_number 3
+    vlan_id 2023
     mac_address '00:00:5E:00:53:05'
   end
 

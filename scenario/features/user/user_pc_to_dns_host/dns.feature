@@ -10,3 +10,10 @@ Feature: DNS で名前解決
     When 社内 PC にログイン
     And DMZ の DNS サーバに dig コマンドで "www.google.com" の IP アドレスを問い合わせる
     Then 名前解決に成功
+
+  Scenario: DNS で名前解決 (TCP)
+    Given 社内 PC
+    And DMZ の DNS サーバ
+    When 社内 PC にログイン
+    And DMZ の DNS サーバに TCP の dig コマンドで "www.google.com" の IP アドレスを問い合わせる
+    Then 名前解決に成功
