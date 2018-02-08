@@ -1,4 +1,7 @@
 #!/bin/bash
+# this script requires root privileges
+
+ip l set dev ens5 up
 
 ip l add psw-port1 type veth peer name ssw-port1
 ip l set dev psw-port1 up
