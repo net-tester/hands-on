@@ -4,7 +4,7 @@ Feature: DNS で名前解決
   社内の DNS サーバを経由してインターネット上のサーバの名前解決をしたい
   なぜなら、毎回 IP アドレスを指定するのは不便だから
 
-  Scenario: DNS で名前解決
+  Scenario: DNS で名前解決 (UDP)
     Given 社内 PC
     And DMZ の DNS サーバ
     When 社内 PC にログイン
