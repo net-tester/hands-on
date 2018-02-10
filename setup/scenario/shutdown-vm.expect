@@ -72,3 +72,6 @@ sleep 2
 send "sudo shutdown -h now\n"
 sleep 2
 
+interact
+puts "done"
+
