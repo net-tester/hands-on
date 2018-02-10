@@ -1,0 +1,74 @@
+#!/usr/bin/expect -f
+
+set host yoyodyne-nettester
+set user handson
+
+spawn virsh console $host
+sleep 2
+send "\n"
+
+expect "login: "
+send "$user\n"
+
+expect "Password: "
+send "$user\n"
+
+expect "$user@$host"
+sleep 2
+send "sudo shutdown -h now\n"
+sleep 2
+
+set host yoyodyne-vyos
+set user vyos
+
+spawn virsh console $host
+sleep 2
+send "\n"
+
+expect "login: "
+send "$user\n"
+
+expect "Password: "
+send "$user\n"
+
+expect "$user@$host"
+sleep 2
+send "sudo shutdown -h now\n"
+sleep 2
+
+set host tajimax-nettester
+set user handson
+
+spawn virsh console $host
+sleep 2
+send "\n"
+
+expect "login: "
+send "$user\n"
+
+expect "Password: "
+send "$user\n"
+
+expect "$user@$host"
+sleep 2
+send "sudo shutdown -h now\n"
+sleep 2
+
+set host global-vyos
+set user vyos
+
+spawn virsh console $host
+sleep 2
+send "\n"
+
+expect "login: "
+send "$user\n"
+
+expect "Password: "
+send "$user\n"
+
+expect "$user@$host"
+sleep 2
+send "sudo shutdown -h now\n"
+sleep 2
+
