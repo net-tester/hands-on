@@ -6,7 +6,7 @@ gem 'cucumber', require: false
 
 gem 'rake'
 gem 'rubocop'
-gem 'factory_girl'
+gem 'factory_bot'
 
 gem 'httpclient'
 gem 'faker'
