@@ -77,10 +77,6 @@ set firewall name dmz1 rule 300 protocol udp
 set firewall name dmz1 rule 300 source port 53
 set firewall name dmz1 rule 300 action accept
 
-set firewall name dmz1 rule 400 protocol tcp
-set firewall name dmz1 rule 400 source port 53
-set firewall name dmz1 rule 400 action drop
-
 set firewall name dmz1 rule 500 state established enable
 set firewall name dmz1 rule 500 state related enable
 set firewall name dmz1 rule 500 action accept
