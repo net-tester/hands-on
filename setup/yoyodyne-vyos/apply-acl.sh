@@ -100,6 +100,10 @@ set firewall name glo1 rule 300 protocol tcp_udp
 set firewall name glo1 rule 300 destination port 53
 set firewall name glo1 rule 300 action accept
 
+set firewall name glo1 rule 400 action accept
+set firewall name glo1 rule 400 destination port 80,443
+set firewall name glo1 rule 400 protocol tcp
+
 
 # dmz->glo
 set firewall name glo rule 100 protocol icmp
